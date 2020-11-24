@@ -1,9 +1,23 @@
 "use strict";
 
-const category = "toys";
+let numberOfFilms = +prompt("Number of films you watched", '0');
 
-console.log(`https:/someurl.com/${category}/5`);
 
-const user = "ivan";
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
 
-alert (`privet, ${user}`);
+let lastwatched1 = prompt('what is your last watched films?', '');
+let lastwatched2 = prompt('what is your last watched films?', '');
+let value1 = prompt('what is value of film?', '');
+let value2 = prompt('what is value of film?', '');
+
+personalMovieDB.movies[lastwatched1] = value1;
+personalMovieDB.movies[lastwatched2] = value2;
+
+console.log(personalMovieDB);
+
