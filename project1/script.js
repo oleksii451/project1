@@ -19,7 +19,7 @@ if (personalMovieDB.count < 10) {
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count <=30) {
     alert("you are a classic watcher");
 } else if (personalMovieDB.count > 30) {
-    alert("you are a kinoman");
+    alert("you are a kinoman!");
 } else {
     alert("an erorr has occured");
         }
